@@ -1,0 +1,240 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.wrap {
+		width: 95%;
+		margin: 0 auto;
+	}
+	select{
+		display: initial;
+	}
+	#mainmenu{
+		display: none;
+	}
+	.social_share {
+		list-style: none;
+		position: fixed;
+		width: 5%;
+		height: 28%;
+		top: 36%;
+		right: 0;
+		box-sizing: border-box;
+		border-radius: 15px 0 0 15px;
+		background: #00000030;
+		z-index: 999999999999999999999999999999;
+		transition: all 0.5s ease;
+	}
+	
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.wrap {
+		width: 98%;
+		margin: 0 auto;
+	}
+	select{
+		display: initial;
+	}
+	#mainmenu{
+		display: none;
+	}
+
+	.social_share {
+		list-style: none;
+		position: fixed;
+		width: 5%;
+		height: 20%;
+		top: 40%;
+		right: 0;
+		box-sizing: border-box;
+		border-radius: 15px 0 0 15px;
+		background: #00000030;
+		z-index: 999999999999999999999999999999;
+		transition: all 0.5s ease;
+	}
+	
+	#content {
+		width: 100%;
+		float: left;
+		padding: 19px 2%;
+		padding-bottom: initial;
+		box-sizing: border-box;
+	}
+	#sbar {
+		width: 100%;
+		padding: 19px 2%;
+		float: left;
+		overflow: hidden;
+		border-top: 5px solid #120c5f;
+		border-left: none;
+		box-sizing: border-box;
+	}
+	#content div img {
+		width: 100%;
+		height: auto;
+		display: block;
+		float: left;
+		vertical-align: middle;
+		box-sizing: border-box;
+	}
+	#content div p {
+		width: 100%;
+		height: 75px;
+		font-family: tahoma;
+		color: #120c5f;
+		text-align: justify;
+		margin-left: none;
+		padding-left: 2%;
+		border-left: none;
+		margin-bottom: 5px;
+		font-size: 15px;
+		float: left;
+		overflow: scroll;
+		box-sizing: border-box;
+	}
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .wrap {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	select{
+		display: initial;
+	}
+	#mainmenu{
+		display: none;
+	}
+
+	.social_share {
+		list-style: none;
+		position: fixed;
+		width: 5%;
+		height: 20%;
+		top: 40%;
+		right: 0;
+		box-sizing: border-box;
+		border-radius: 15px 0 0 15px;
+		background: #00000030;
+		z-index: 999999999999999999999999999999;
+		transition: all 0.5s ease;
+	}
+
+	#content {
+		width: 100%;
+		float: left;
+		padding: 19px;
+		padding-bottom: initial;
+		box-sizing: border-box;
+	}
+	#sbar {
+		width: 100%;
+		padding: 19px;
+		float: left;
+		overflow: hidden;
+		border-top: 5px solid #120c5f;
+		border-left: none;
+		box-sizing: border-box;
+	}
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+    
+        .wrap {
+			width: 98%;
+			margin: 0 auto;
+		}
+
+		select{
+			display: initial;
+		}
+		#mainmenu{
+			display: none;
+		}
+	
+		.social_share {
+			list-style: none;
+			position: fixed;
+			width: 5%;
+			height: 20%;
+			top: 40%;
+			right: 0;
+			box-sizing: border-box;
+			border-radius: 15px 0 0 15px;
+			background: #00000030;
+			z-index: 999999999999999999999999999999;
+			transition: all 0.5s ease;
+		}
+	
+		#content {
+			width: 100%;
+			float: left;
+			padding: 19px;
+			padding-bottom: initial;
+			box-sizing: border-box;
+		}
+		#sbar {
+			width: 100%;
+			padding: 19px;
+			float: left;
+			overflow: hidden;
+			border-top: 5px solid #120c5f;
+			border-left: none;
+			box-sizing: border-box;
+		}
+
+
+	
+}

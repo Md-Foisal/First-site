@@ -1,0 +1,14 @@
+
+@font-face{
+    font-family: "solamanlipi";
+    src: 
+        url("../fonts/SolaimanLipi.ttf") format("truetype"),
+
+        url("../fonts/SolaimanLipi.svg") format("svg"),
+
+        url("../fonts/SolaimanLipi.eot") format("eot"),
+
+        url("../fonts/SolaimanLipi.woff") format("woff"),
+        
+        url("../fonts/SolaimanLipi.woff2") format("woff2");
+}
